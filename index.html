@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lucas Solis - Dev</title>
+  <style>
+    body { 
+      background: #0f0f0f; color: white; 
+      font-family: sans-serif; text-align: center;
+      padding: 50px 20px;
+    }
+    h1 { color: #00ff88; font-size: 2.5em; }
+    p { font-size: 1.2em; color: #ccc; }
+    button {
+      background: #00ff88; color: #000;
+      border: none; padding: 15px 30px;
+      font-size: 1.1em; font-weight: bold;
+      border-radius: 10px; margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover { background: #00cc6a; }
+  </style>
+</head>
+<body>
+  <h1>Hola, soy Lucas Solis 👋</h1>
+  <p>Quiero ser el mejor programador</p>
+  <p>🚀 Mi primera web desde Malvinas Argentinas</p>
+  
+  <button onclick="saludar()">Tocar acá</button>
+
+  <script>
+    function saludar() {
+      let nombre = prompt('¿Cómo te llamás?');
+      if(nombre) {
+        alert('¡Genial ' + nombre + '! Gracias por visitar la web de Lucas 🔥');
+      }
+    }
+  </script>
+</body>
+</html>
