@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Lucas Solis - Dev</title>
-  <style>
-    body { 
-      background: #0f0f0f; color: white; 
-      font-family: sans-serif; text-align: center;
-      padding: 50px 20px;
-    }
-    h1 { color: #00ff88; font-size: 2.5em; }
-    p { font-size: 1.2em; color: #ccc; }
-    button {
-      background: #00ff88; color: #000;
-      border: none; padding: 15px 30px;
-      font-size: 1.1em; font-weight: bold;
-      border-radius: 10px; margin-top: 20px;
-      cursor: pointer;
-    }
-    button:hover { background: #00cc6a; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucas Solis | Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;position:relative}
+.badge{border:1px solid #22c55e;color:#22c55e;padding:6px 14px;border-radius:999px;font-size:12px;letter-spacing:2px;margin-bottom:20px}
+h1{font-size:clamp(40px,10vw,80px);line-height:0.9;margin-bottom:15px}
+h1 span{color:#22c55e}
+.sub{color:#888;max-width:500px;margin:0 auto 30px;font-size:16px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{background:#22c55e;color:#000;padding:14px 28px;border-radius:10px;font-weight:700;text-decoration:none;transition:0.2s}
+.btn:hover{transform:scale(1.05)}
+.btn2{border:1px solid #333;color:#fff;padding:14px 28px;border-radius:10px;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;max-width:1000px;margin:50px auto;padding:20px}
+.card{background:#111;border:1px solid #222;border-radius:16px;padding:24px;text-align:left}
+.card h3{margin-bottom:8px}
+.card p{color:#888;font-size:14px}
+.footer{padding:60px 20px;color:#444;text-align:center;font-size:12px}
+.tag{display:inline-block;background:#1a1a1a;border:1px solid #222;padding:4px 8px;border-radius:6px;font-size:11px;margin:4px 2px;color:#aaa}
+</style>
 </head>
 <body>
-  <h1>Hola, soy Lucas Solis 👋</h1>
-  <p>Quiero ser el mejor programador</p>
-  <p>🚀 Mi primera web desde Malvinas Argentinas</p>
-  
-  <button onclick="saludar()">Tocar acá</button>
+<div class="hero">
+<div class="badge">DISPONIBLE PARA PROYECTOS</div>
+<h1>Lucas<br><span>Solis</span></h1>
+<p class="sub">Futuro mejor programador de Malvinas Argentinas. Construyendo webs que se ven increíbles y funcionan rápido. Hecho 100% desde el celular.</p>
+<div class="btns">
+<a class="btn" href="#" onclick="let n=prompt('¿Cómo te llamás?'); if(n) alert('¡Bienvenido '+n+'! Soy Lucas, hablemos 🚀')">Saludarme 👋</a>
+<a class="btn2" href="https://github.com/solislucas628-rgb" target="_blank">GitHub</a>
+</div>
+</div>
 
-  <script>
-    function saludar() {
-      let nombre = prompt('¿Cómo te llamás?');
-      if(nombre) {
-        alert('¡Genial ' + nombre + '! Gracias por visitar la web de Lucas 🔥');
-      }
-    }
-  </script>
+<div class="grid">
+<div class="card">
+<h3>🚀 Mi-wed v1</h3>
+<p>Mi primera web deployada en Vercel con dominio propio.</p>
+<div style="margin-top:10px"><span class="tag">HTML</span><span class="tag">Vercel</span><span class="tag">GitHub</span></div>
+</div>
+<div class="card">
+<h3>💡 En progreso</h3>
+<p>Aprendiendo JavaScript avanzado y diseño UI. Próximo: tienda online.</p>
+<div style="margin-top:10px"><span class="tag">JS</span><span class="tag">En curso</span></div>
+</div>
+<div class="card">
+<h3>📍 Malvinas Argentinas</h3>
+<p>Programando desde Argentina para el mundo. Sin PC, sin excusas.</p>
+<div style="margin-top:10px"><span class="tag">Argentina</span><span class="tag">Mobile Dev</span></div>
+</div>
+</div>
+
+<div class="footer">© 2026 Lucas Solis — Hecho con ❤️ desde el celu — mi-wed-gamma.vercel.app</div>
+
+<script>console.log("¡Hola! Soy Lucas Solis 👋");</script>
 </body>
 </html>
